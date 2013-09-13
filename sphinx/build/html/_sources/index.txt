@@ -13,6 +13,27 @@ Contents:
 
 
 
+.. data-table::
+   :header-rows: 1
+   :widths: 1 1 1 3
+
+   * - Column A
+     - Column B
+     - Column C
+     - Column D
+     
+   * - A
+     - B
+     - C
+     - D
+
+   * - A
+     - X
+     - Y
+     - Z
+
+
+
 Indices and tables
 ==================
 

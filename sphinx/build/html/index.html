@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/datatable.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -23,6 +24,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/jquery.dataTables.js"></script>
     <link rel="top" title="mandrewcarter 0.0.0 documentation" href="#" /> 
   </head>
   <body>
@@ -32,7 +35,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="#">mandrewcarter 0.0.1 documentation</a> &raquo;</li> 
+        <li><a href="#">mandrewcarter 0.0.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -48,6 +51,49 @@
 <ul class="simple">
 </ul>
 </div>
+<table border="1" class="datatable_0 display docutils">
+<colgroup>
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Column A</th>
+<th class="head">Column B</th>
+<th class="head">Column C</th>
+<th class="head">Column D</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+</tr>
+<tr class="row-odd"><td>A</td>
+<td>X</td>
+<td>Y</td>
+<td>Z</td>
+</tr>
+</tbody>
+</table>
+
+<!---
+https://datatables.net/release-datatables/examples/basic_init/filter_only.html
+--->
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $('.datatable_0').dataTable( {
+            "bPaginate": false,
+            "bLengthChange": false,
+            "bFilter": true,
+            "bSort": true,
+            "bInfo": false,
+            "bAutoWidth": false
+        } );
+    } );
+</script>
 </div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
